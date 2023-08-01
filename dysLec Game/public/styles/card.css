@@ -87,8 +87,11 @@
   padding: 15px;
   position: absolute;
   backface-visibility: hidden;
+  font-family: 'Ubuntu', sans-serif;
+
 }
 
 .frente {
   transform: rotateY(180deg);
+  font-family: 'Ubuntu', sans-serif;
 }
