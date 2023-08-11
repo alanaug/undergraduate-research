@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/card.css" />
     <link rel="stylesheet" href="styles/win.css" /><!--Estilo da tela de vitória-->
     <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/revisao.css" />
   </head>
   <body>
     <header>
@@ -56,23 +57,18 @@
             <button id="btn-reiniciar">Reiniciar</button> -->
         <a href="index.html">Reiniciar</a>
       </section>
-      <section class="jogo">
-        <div class="conteiner">
+      <section id="corpo">
+        <div id="esquerda">
+            <h3>FALE O NOME DA COR EM INGLÊS</h3>
+            <span id="cor-na-caixa"></span>
 
-          <h1> Aperte PLAY e diga em voz alta <br> o nome do objeto </h1>
-          <br>
-          <img id ="cardPalavra" src="img/panela.png" alt="panela">
-  
-          <div class="search">
-  
-              <button id="speakbt">PLAY</button>
-  
-              <div id="resultSpeak">Retorno</div>
-  
-          </div>
-  
-      </div>
-    </section>
+            <div id="cor-atual">
+
+            </div>
+
+            <button id="btn-responder">RESPONDER</button>
+
+        </div>
     </div>
     <footer>
       <ul>
@@ -85,6 +81,6 @@
         <li><h3>@alanaug</h3></li>
       </ul>
     </footer>
-    <script src="scripts/index.js"></script>
+    <script src="scripts/functions.js"></script>
   </body>
 </html>

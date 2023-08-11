@@ -82,12 +82,16 @@
 
 .frente,
 .verso {
+  display: flex;
+  text-align: center;
   width: 100px;
   height: 100px;
   padding: 15px;
   position: absolute;
   backface-visibility: hidden;
   font-family: 'Ubuntu', sans-serif;
+  align-items: center;
+  justify-content: center;
 
 }
 
