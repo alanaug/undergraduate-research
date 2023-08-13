@@ -89,9 +89,8 @@ footer ul a img:hover {
 }
 
 #esq h2 {
-
     font-size: 20px;
-    margin-top: 24px;
+    margin: 24px 15px 0px 15px;
     color: black;
 
 }

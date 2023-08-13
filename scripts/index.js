@@ -108,6 +108,15 @@ function flipCard() {
     console.log(movements);
 
   }
+
+  //Modal para o menu do jogo
+  var btn = document.getElementById("myBtn");
+  btn.onclick = function() {
+    setTimeout(() => {
+      document.querySelector('#vitoria').style.display = 'block'
+      document.querySelector('#movimentosvitoria').innerHTML = movements
+    }, 100);
+  }
  
   //Desabilitando o clique nas cartas viradas
 
