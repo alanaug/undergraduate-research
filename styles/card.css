@@ -55,33 +55,33 @@
   transform: rotateY(180deg);
 }
 
-.card.flip[data-nome="sapo"],
-.card.flip[data-nome="sapo"] img {
+.card.flip[data-nome="azul"],
+.card.flip[data-nome="azul"] img {
   background-color: #84cffa;
 }
 
-.card.flip[data-nome="vaca"],
-.card.flip[data-nome="vaca"] img {
+.card.flip[data-nome="vermelho"],
+.card.flip[data-nome="vermelho"] img {
   background-color: #FA8484;
 }
 
-.card.flip[data-nome="canguru"],
-.card.flip[data-nome="canguru"] img {
+.card.flip[data-nome="rosa"],
+.card.flip[data-nome="rosa"] img {
   background-color: #E984FA;
 }
 
-.card.flip[data-nome="leao"],
-.card.flip[data-nome="leao"] img {
+.card.flip[data-nome="verde"],
+.card.flip[data-nome="verde"] img {
   background-color: #84FAAC;
 }
 
-.card.flip[data-nome="passaro"],
-.card.flip[data-nome="passaro"] img {
+.card.flip[data-nome="lilas"],
+.card.flip[data-nome="lilas"] img {
   background-color: #8684FA;
 }
 
-.card.flip[data-nome="elefante"],
-.card.flip[data-nome="elefante"] img {
+.card.flip[data-nome="amarelo"],
+.card.flip[data-nome="amarelo"] img {
   background-color: #F7FA84;
 }
 /* novas */

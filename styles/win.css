@@ -2,7 +2,7 @@
     font-family: 'Open-Dyslexic', cursive;
 }
 
-#vitoria {
+#fim-de-jogo, #menu {
     display: flex;
     position: fixed;
     text-align: center;
@@ -15,38 +15,38 @@
     display: none;
 }
 
-#vitoria h1 {
+#fim-de-jogo h1, #menu h1 {
     font-size: 4em;
     font-weight: normal;
 }
 
-#vitoria h2 {
+#fim-de-jogo h2, #menu h2 {
     font-size: 2em;
     margin: 1em;
 }
 
-#vitoria a {
+#fim-de-jogo a, #menu a {
     text-decoration: none;
     color: rgb(50, 50, 50);
     padding: 10px 20px;
     border-radius: 50px;
-    border: 3px solid rgb(50, 50, 50);
+    border: 3px solid #F75E75;
     bottom: calc(20vh + 50px);
     left: calc(50% - 72px);
     width: fit-content;
 }
 
-#vitoria a:hover {
-    background-color: rgb(50, 50, 50);
-    color: rgb(228, 173, 230);
+#fim-de-jogo a:hover, #menu a:hover {
+    background-color: #F75E75;
+    color: rgb(255, 255, 255);
 }
 
-#vitoria p {
+#fim-de-jogo p, #menu p {
     color: rgb(50, 50, 50);
 }
 
-#vitoria #container {
-    background: rgb(228, 173, 230);
+#fim-de-jogo #container, #menu #container{
+    background: aliceblue;
     padding: 50px;
     width: 80%;
     height: 60vh;

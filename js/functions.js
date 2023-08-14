@@ -97,7 +97,7 @@ if(window.SpeechRecognition || window.webkitSpeechRecognition){
 
 
 }else{
-  alert('não tem suporte');
+  alert('Seu navegador não tem suporte para esta aplicação, tente utilizar o Google Chrome.');
 }
 
 

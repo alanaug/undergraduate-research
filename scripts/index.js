@@ -94,8 +94,8 @@ function flipCard() {
       //ALTERAÇÃO* Confere se o "winContador" é igual a "6", que é o número máximo de vitórias que pode haver no jogo!
       if(winContador == 6) {
         setTimeout(() => {
-          document.querySelector('#vitoria').style.display = 'block'
-          document.querySelector('#movimentosvitoria').innerHTML = movements
+          document.querySelector('#fim-de-jogo').style.display = 'block'
+          document.querySelector('#movimentosfim-de-jogo').innerHTML = movements
         }, 1000);
       }
       //FIM-ALTERAÇÃO*
@@ -113,8 +113,8 @@ function flipCard() {
   var btn = document.getElementById("myBtn");
   btn.onclick = function() {
     setTimeout(() => {
-      document.querySelector('#vitoria').style.display = 'block'
-      document.querySelector('#movimentosvitoria').innerHTML = movements
+      document.querySelector('#menu').style.display = 'block'
+      document.querySelector('#movimentosmenu').innerHTML = movements
     }, 100);
   }
  
