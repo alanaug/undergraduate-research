@@ -1,18 +1,14 @@
 var engine = {
-    "cores": ['panela','tesoura','castelo','janela','buzina','dente','martelo','presente','vassoura','cola','bola','piscina'],
+    "cores": ['tesoura','purple'],
     "hexadecimais":{
-      'panela':'url(https://cdn-icons-png.flaticon.com/512/2728/2728648.png)',
-      'tesoura':'url(https://cdn-icons-png.flaticon.com/512/124/124818.png)',
-      'castelo': 'url(https://cdn-icons-png.flaticon.com/512/2228/2228433.png)',
-      'janela':'url(https://cdn-icons-png.flaticon.com/512/1670/1670079.png)',
-      'buzina':'url(https://cdn-icons-png.flaticon.com/512/6647/6647080.png)',
-      'dente':'url(https://cdn-icons-png.flaticon.com/512/4866/4866258.png)',
-      'martelo':'url(https://cdn-icons-png.flaticon.com/512/1815/1815742.png)',
-      'presente':'url(https://cdn-icons-png.flaticon.com/512/4530/4530656.png)',
-      'vassoura':'url(https://cdn-icons-png.flaticon.com/512/1669/1669005.png)',
-      'cola':'url(https://cdn-icons-png.flaticon.com/512/1685/1685426.png)',
-      'bola':'url(https://cdn-icons-png.flaticon.com/512/53/53283.png)',
-      'piscina':'url(https://cdn-icons-png.flaticon.com/512/2570/2570723.png)',
+      'tesoura':'url(https://m.media-amazon.com/images/I/814edBVQ1KL._UF1000,1000_QL80_.jpg)',
+      'purple':'url(https://media.geeksforgeeks.org/wp-content/uploads/image-after-1.png)',
+      'pink': '#F02A7E',
+      'red':'#E90808',
+      'yellow':'#E7D703',
+      'orange':'#F16529',
+      'grey':'#EBEBEB',
+      'black':'#141414',
     },
     "moedas":0
 }
@@ -36,7 +32,6 @@ function aplicarCorNaCaixa(nomeDaCor){
   
   caixaDasCores.style.backgroundImage = nomeDaCor
   caixaDasCores.style.backgroundSize = "100%";
-  caixaDasCores.style.margin = "30px";
 
 }
 
@@ -82,22 +77,27 @@ if(window.SpeechRecognition || window.webkitSpeechRecognition){
   }
 
   gravador.onresult = function(event){
+    var img = document.createElement("img");
     transcricaoAudio = event.results[0][0].transcript.toUpperCase();
     respostaCorreta = document.getElementById('cor-na-caixa').innerText.toUpperCase();
 
     if(transcricaoAudio ===  respostaCorreta){
       atualizaPontuacao(1);
+      img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mr._Smiley_Face.svg/1024px-Mr._Smiley_Face.svg.png";
+      
     }else{
       atualizaPontuacao(2);
+      img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Sad_face.svg/1030px-Sad_face.svg.png";
     }
-
+    // Adiciona a imagem ao corpo do documento
+    document.body.appendChild(img);
     aplicarCorNaCaixa(sortearCor());
 
   }
 
 
 }else{
-  alert('Seu navegador não tem suporte para esta aplicação, tente utilizar o Google Chrome.');
+  alert('Não tem suporte, não podemos executar');
 }
 
 

@@ -77,15 +77,20 @@ if(window.SpeechRecognition || window.webkitSpeechRecognition){
   }
 
   gravador.onresult = function(event){
+    var img = document.createElement("img");
     transcricaoAudio = event.results[0][0].transcript.toUpperCase();
     respostaCorreta = document.getElementById('cor-na-caixa').innerText.toUpperCase();
 
     if(transcricaoAudio ===  respostaCorreta){
       atualizaPontuacao(1);
+      img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mr._Smiley_Face.svg/1024px-Mr._Smiley_Face.svg.png";
+      
     }else{
       atualizaPontuacao(-1);
+      img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Sad_face.svg/1030px-Sad_face.svg.png";
     }
-
+    // Adiciona a imagem ao corpo do documento
+    document.body.appendChild(img);
     aplicarCorNaCaixa(sortearCor());
 
   }
