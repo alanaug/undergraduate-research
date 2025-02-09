@@ -1,6 +1,8 @@
 This project earned me my first academic award! 🏆
 "Best Scientific Initiation of 2023 by Mackenzie Presbyterian University”
 
+A new improved version is already being developed...
+
 **LINK TO THE SCIENTIFIC ARTICLE: http://eventoscopq.mackenzie.br/index.php/jornada/xix/paper/view/3639/2198**
 
 **LINK TO THE GAME: https://alanaug.github.io/undergraduate-research/** (Currently only available in Brazilian portuguese)
